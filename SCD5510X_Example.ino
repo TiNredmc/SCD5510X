@@ -1,7 +1,7 @@
 //This is example code for load data bit to SCD5510X 10 digits 5x5 display from osram (or siemens).
 
 #include <SPI.h> //init. library for spi device .I will communicate with SCD5510X via SPI bus interface .
-int Load= 10;
+int Load= 10; //set pin SS or device enable(data input control)
 
 void setup(){
 pinMode(Load, OUTPUT);//set pin10 to output for switching "send bit" or "display data out"
